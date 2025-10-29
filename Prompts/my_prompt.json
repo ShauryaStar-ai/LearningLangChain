@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "animal",
+        "attribute"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Tell me about {animal} that has {attribute}. Under 25 words.",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}

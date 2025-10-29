@@ -11,7 +11,7 @@ embedding_model = OpenAIEmbeddings(model=model,dimensions=300 ,openai_api_key=OP
 
 docments = ["Cat can mew mew ", "Dog can bark bark", "Lion can roar","Wolf can howl"]
 docments_embeding = embedding_model.embed_documents(docments)
-query = "What is the cat can do"
+query = "Who can roar?"
 query_embedding = embedding_model.embed_query(query)
 
 similarity = cosine_similarity([query_embedding], docments_embeding)

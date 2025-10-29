@@ -1,16 +1,17 @@
-"""import streamlit as st
+import streamlit as st
 from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
 import os
-from dotenv import load_dotenv
-from pathlib import Path
+
 
 # relative path to your .env
 
 
 OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
 model = ChatOpenAI(api_key=OPEN_AI_API_KEY, temperature=0.5)
-OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
+
+
+# Load the .env file
+
 
 st.title("Simple Chat App")
 
@@ -29,4 +30,4 @@ if prompt:
 
     except Exception as e:
         # Show an error if the API call fails
-        st.error(f"An error occurred: {e}")"""
+        st.error(f"An error occurred: {e}")
