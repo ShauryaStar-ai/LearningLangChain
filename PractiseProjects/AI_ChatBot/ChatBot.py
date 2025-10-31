@@ -10,7 +10,7 @@ while True:
     user_input = input("User: ")
     chatHistroy.append(HumanMessage(content=user_input))
     if user_input == "exit":
-        print("AI: Goodbye!")
+        print(chatHistroy)
         break
     res = model.invoke(chatHistroy)
     res = res.content
