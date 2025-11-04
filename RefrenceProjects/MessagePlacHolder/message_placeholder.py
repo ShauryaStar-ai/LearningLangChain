@@ -20,9 +20,10 @@ with open("chat.txt", "r") as f:
         chat_history.append(HumanMessage(content=line.strip()))
 
 # Invoke the prompt
-res = prompt.invoke({
+formattedPrompt = prompt.invoke({
     "history": chat_history,
     "input": "When will the refund be there?"
 })
 
-print(res)
+responce = model.invoke(formattedPrompt)
+print(responce)
