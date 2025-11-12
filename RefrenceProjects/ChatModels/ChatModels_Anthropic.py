@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import langchain_anthropic
 
 # Load variables from the .env file into the environment
-load_dotenv()
 
 API_KEY = os.getenv("ANTHROPIC_API_KEY")
 #print(API_KEY)
