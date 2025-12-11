@@ -8,3 +8,4 @@ def square(a: int) -> int:
 
 sqauretool = StructuredTool.from_function(func = square, name="square", description="A tool that squares a number",args_schema=SquareInput)
 print(sqauretool.invoke({"a": 2}))
+
